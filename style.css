@@ -21,3 +21,30 @@ body{
 .card-body a{
    margin-left: 4rem !important;
 }
+.row{
+    --bs-gutter-x:0;
+}
+
+@media (min-width:300px) and (max-width: 600px) {
+    .row{
+        --bs-gutter-x:0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .card {
+        border: 0;
+        border-radius: 0;
+    }
+    .container-fluid{
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+    .card-body a {
+        color: #111;
+        background-color: yellow;
+        font-weight: bolder;
+
+    }
+
+}

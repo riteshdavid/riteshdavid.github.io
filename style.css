@@ -26,6 +26,10 @@ body{
 }
 
 @media (min-width:300px) and (max-width: 600px) {
+    body{
+        background-color: rgb(185,182,182);
+        margin-bottom:1rem;
+    }
     .row{
         --bs-gutter-x:0;
         padding-left: 0;

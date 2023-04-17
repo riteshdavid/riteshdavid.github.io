@@ -11,7 +11,7 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-
+  <script src="store.js" async></script>
   <title>Store</title>
 </head>
 
@@ -94,72 +94,100 @@
     <div class="row">
       
         <div class="card  mx-auto col-lg-4 col-md-6 col-sm-12">
-          <img src="images/image-7.jpg" class="card-img-top img-fluid" alt="...">
+          
           <div class="card-body">
-            <h5 class="card-title">Recipe Book</h5>
+            <img src="images/image-7.jpg" class="card-img-top img-fluid shop-item-image" alt="...">
+            <h5 class="card-title shop-item-title">Recipe Book</h5>
             <p class="card-text">Some quick example of best recipes in the world with their nutrient value
               content.</p>
-            <a href="#" class="btn btn-primary">Get Now</a>
+              <span class="shop-item-price">$19.99</span>
+              <button href="#" class="btn btn-primary shop-item-button">Get Now</button>
           </div>
         
       </div>
       
         <div class="card  mx-auto col-lg-4 col-md-6 col-sm-12">
-          <img src="images/image-9.jpg" class="card-img-top" alt="...">
+          
           <div class="card-body">
-            <h5 class="card-title">Superfast Card</h5>
+            <img src="images/image-9.jpg" class="card-img-top shop-item-image" alt="...">
+            <h5 class="card-title shop-item-title">Superfast Card</h5>
             <p class="card-text">Some quick transfer of photo can help save you with the waiting time of your explore of the photography experience
               .</p>
-            <a href="#" class="btn btn-primary">Get Now</a>
+              <span class="shop-item-price">$19.99</span>
+            <button href="#" class="btn btn-primary shop-item-button">Get Now</button>
           </div>
         </div>
       
       
         <div class="card  mx-auto col-lg-4 col-md-6 col-sm-12">
-          <img src="images/image-8.jpg" class="card-img-top" alt="...">
+          
           <div class="card-body">
-            <h5 class="card-title">Reltime Watch</h5>
+            <img src="images/image-8.jpg" class="card-img-top shop-item-image" alt="...">
+            <h5 class="card-title shop-item-title">Reltime Watch</h5>
             <p class="card-text">Some very limited edition watches made by the company of Europe's best company.
               content.</p>
-            <a href="#" class="btn btn-primary">Get Now</a>
+              <span class="shop-item-price">$19.99</span>
+            <button href="#" class="btn btn-primary shop-item-button">Get Now</button>
           </div>
         </div>
       
       
         <div class="card  mx-auto col-lg-4 col-md-6 col-sm-12">
-          <img src="images/image-10.jpg" class="card-img-top" alt="...">
+          
           <div class="card-body">
-            <h5 class="card-title">DSLR Camera</h5>
+            <img src="images/image-10.jpg" class="card-img-top shop-item-image" alt="...">
+            <h5 class="card-title shop-item-title">DSLR Camera</h5>
             <p class="card-text">Take some quick photo shoots with the latest camera from the company which own's the trust of every photographer. 
               content.</p>
-            <a href="#" class="btn btn-primary">Get Now</a>
+              <span class="shop-item-price">$19.99</span>
+            <button href="#" class="btn btn-primary shop-item-button">Get Now</button>
           </div>
         </div>
       
       
         <div class="card mx-auto  col-lg-4 col-md-6 col-sm-12">
-          <img src="images/image-7.jpg" class="card-img-top" alt="...">
+          
           <div class="card-body">
-            <h5 class="card-title">Recipe Book 2</h5>
+            <img src="images/image-7.jpg" class="card-img-top shop-item-image" alt="...">
+            <h5 class="card-title shop-item-title">Recipe Book 2</h5>
             <p class="card-text">Some quick recipes for every person that will make you what a food this is.
               content.</p>
-            <a href="#" class="btn btn-primary">Get Now</a>
+              <span class="shop-item-price">$19.99</span>
+            <button href="#" class="btn btn-primary shop-item-button">Get Now</button>
           </div>
         </div>
       
       
         <div class="card mx-auto col-lg-4 col-md-6 col-sm-12">
-          <img src="images/image-8.jpg" class="card-img-top" alt="...">
+          
           <div class="card-body">
-            <h5 class="card-title">Walton Watch</h5>
+            <img src="images/image-8.jpg" class="card-img-top shop-item-image" alt="...">
+            <h5 class="card-title shop-item-title">Walton Watch</h5>
             <p class="card-text">Best in class watch for people who like to keep every second memorable.
               content.</p>
-            <a href="#" class="btn btn-primary">Get Now</a>
+              <span class="shop-item-price">$19.99</span>
+            <button href="#" class="btn btn-primary shop-item-button">Get Now</button>
           </div>
         </div>
       
     </div>
   </section>
+
+  <section class="container content-section">
+    <h2 class="section-header">CART</h2>
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
+    </div>
+    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+</section>
 
 
 

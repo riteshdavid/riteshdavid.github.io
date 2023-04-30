@@ -39,6 +39,7 @@ function removeCartItem(event) {
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
     updateCartTotal()
+    subCartIcon()
 }
 
 function quantityChanged(event) {
@@ -49,6 +50,20 @@ function quantityChanged(event) {
     updateCartTotal()
 }
 
+function addCartIcon() {
+    var cartvalue = document.getElementById('cart1')
+    let numofitems=cartvalue.getAttribute('value')
+    numofitems=parseInt(numofitems)+1
+    document.getElementById('cart1').setAttribute("value",numofitems.toString()); 
+}
+
+function subCartIcon() {
+    var cartvalue = document.getElementById('cart1')
+    let numofitems=cartvalue.getAttribute('value')
+    numofitems=parseInt(numofitems)-1
+    document.getElementById('cart1').setAttribute("value",numofitems.toString()); 
+}
+
 function addToCartClicked(event) {
     var button = event.target
     var shopItem = button.parentElement
@@ -57,7 +72,8 @@ function addToCartClicked(event) {
     var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
     addItemToCart(title, price, imageSrc)
     updateCartTotal()
-    alert(`${title} Added to Cart`)
+    
+    // alert(`${title} Added to Cart`)
 }
 
 function addItemToCart(title, price, imageSrc) {
@@ -71,6 +87,7 @@ function addItemToCart(title, price, imageSrc) {
             return
         }
     }
+    addCartIcon()
     var cartRowContents = `
         <div class="cart-item cart-column">
             <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
